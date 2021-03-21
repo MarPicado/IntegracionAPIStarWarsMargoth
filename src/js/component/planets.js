@@ -8,7 +8,7 @@ export const Planets = () => {
 	const { store, actions } = useContext(Context);
 	console.log(store);
 	return (
-		<div className="container-fluid characters">
+		<div className="container-fluid characters mt-5">
 			<h1>Planets</h1>
 			<div className="row">
 				{store.planets !== undefined

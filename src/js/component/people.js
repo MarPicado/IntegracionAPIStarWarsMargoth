@@ -8,7 +8,7 @@ export const People = () => {
 	const { store, actions } = useContext(Context);
 	console.log(store);
 	return (
-		<div className="container-fluid characters">
+		<div className="container-fluid characters mt-5">
 			<h1>Characters</h1>
 			<div className="row">
 				{store.people !== undefined
