@@ -15,8 +15,10 @@ export function Card(props) {
 					<p className="card-text">{props.gender}</p>
 					<p className="card-text">{props.hair_color}</p>
 					<p className="card-text">{props.eye_color}</p>
+					<p className="card-text">{props.population}</p>
+					<p className="card-text">{props.terrain}</p>
 					<a href="#" className="btn btn-primary">
-						Go somewhere
+						Learn More!
 					</a>
 				</div>
 			</div>
@@ -29,5 +31,7 @@ Card.propTypes = {
 	gender: PropTypes.string,
 	hair_color: PropTypes.string,
 	eye_color: PropTypes.string,
-	img: PropTypes.string
+	img: PropTypes.string,
+	population: PropTypes.number,
+	terrain: PropTypes.string
 };

@@ -4,23 +4,22 @@ import { Link } from "react-router-dom";
 import { Card } from "./card";
 import "../../styles/people.scss";
 
-export const People = () => {
+export const Planets = () => {
 	const { store, actions } = useContext(Context);
 	console.log(store);
 	return (
 		<div className="container-fluid characters">
-			<h1>Characters</h1>
+			<h1>Planets</h1>
 			<div className="row">
-				{store.people !== undefined
-					? store.people.map((item, index) => {
+				{store.planets !== undefined
+					? store.planets.map((item, index) => {
 							return (
 								<div key={index}>
 									<Card
 										image={item.img}
 										name={item.name}
-										gender={item.gender}
-										hair_color={item.hair_color}
-										eye_color={item.eye_color}
+										population={item.population}
+										terrain={item.terrain}
 									/>
 								</div>
 							);
