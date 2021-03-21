@@ -7,13 +7,19 @@ export const People = () => {
 	const { store, actions } = useContext(Context);
 	console.log(store);
 	return (
-		<div className="container">
+        <div className="d-flex justify-content-center mt-5">
 			<h1>Characters</h1>
 			{store.people !== undefined
 				? store.people.map((item, index) => {
 						return (
-							<div key={index} className="col">
-								<Card name={item.name} gender={item.gender} />
+							<div key={index}>
+								<Card
+									image={item.img}
+									name={item.name}
+									gender={item.gender}
+									hair_color={item.hair_color}
+									eye_color={item.eye_color}
+								/>
 							</div>
 						);
 				  })
