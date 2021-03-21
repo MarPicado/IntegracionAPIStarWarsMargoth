@@ -17,8 +17,11 @@ export function Card(props) {
 					<p className="card-text">{props.eye_color}</p>
 					<p className="card-text">{props.population}</p>
 					<p className="card-text">{props.terrain}</p>
-					<a href="#" className="btn btn-primary">
+					<a href="#" className="btn btn-primary mr-5">
 						Learn More!
+					</a>
+					<a href="#" className="btn btn-warning ml-3">
+						<i className="fas fa-heart" />
 					</a>
 				</div>
 			</div>
