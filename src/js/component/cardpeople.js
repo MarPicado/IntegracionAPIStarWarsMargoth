@@ -23,7 +23,6 @@ export function Cardpeople(props) {
 					<p className="card-text text-lg-left">Gender: {props.gender}</p>
 					<p className="card-text text-lg-left">Hair Color: {props.hair_color}</p>
 					<p className="card-text text-lg-left">Eyes Color: {props.eye_color}</p>
-					<p className="card-text text-lg-left">La cantidad de clicks es: {store.heart}</p>
 					<a href="#" className="btn btn-primary mr-5">
 						Learn More!
 					</a>
