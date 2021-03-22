@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export function Card(props) {
+export function Cardplanets(props) {
 	return (
 		<div className="col">
 			<div className="card" style={{ width: "18rem" }}>
@@ -12,9 +12,8 @@ export function Card(props) {
 				/>
 				<div className="card-body">
 					<h5 className="card-title text-xl-left">Name: {props.name}</h5>
-					<p className="card-text text-lg-left">Gender: {props.gender}</p>
-					<p className="card-text text-lg-left">Hair Color: {props.hair_color}</p>
-					<p className="card-text text-lg-left">Eyes Color: {props.eye_color}</p>
+					<p className="card-text text-lg-left">Population: {props.population}</p>
+					<p className="card-text text-lg-left">Terrain: {props.terrain}</p>
 					<a href="#" className="btn btn-primary mr-5">
 						Learn More!
 					</a>
@@ -27,10 +26,9 @@ export function Card(props) {
 	);
 }
 
-Card.propTypes = {
+Cardplanets.propTypes = {
 	name: PropTypes.string,
-	gender: PropTypes.string,
-	hair_color: PropTypes.string,
-	eye_color: PropTypes.string,
-	img: PropTypes.string
+	img: PropTypes.string,
+	population: PropTypes.number,
+	terrain: PropTypes.string
 };
