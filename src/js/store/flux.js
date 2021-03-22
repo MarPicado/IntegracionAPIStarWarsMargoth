@@ -12,7 +12,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					background: "white",
 					initial: "white"
 				}
-			]
+			],
+			heart: 1,
+			favorites: []
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -50,6 +52,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				//reset the global store
 				setStore({ demo: demo });
+			},
+			setHeart: () => {
+				setStore({ heart: getStore().heart + 1 });
+			},
+			addFavorites: fav => {
+				setStore({ favorites: getStore().favorites.concat(fav) });
 			}
 		}
 	};

@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
-import { Card } from "./card";
+import { Cardpeople } from "./cardpeople";
 import "../../styles/people.scss";
 
 export const People = () => {
@@ -15,7 +15,7 @@ export const People = () => {
 					? store.people.map((item, index) => {
 							return (
 								<div key={index}>
-									<Card
+									<Cardpeople
 										image={item.img}
 										name={item.name}
 										gender={item.gender}

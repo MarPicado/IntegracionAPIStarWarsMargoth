@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/navbar.scss";
+import { Context } from "../store/appContext";
 
 export const Navbar = () => {
+	const { store, actions } = useContext(Context);
+	console.log(store);
 	return (
 		<nav className="navbar navbar-light bg-light">
 			<a className="navbar-brand" href="#">
@@ -24,18 +27,16 @@ export const Navbar = () => {
 					data-toggle="dropdown"
 					aria-haspopup="true"
 					aria-expanded="false">
-					Favorites <span className="badge badge-light">4</span>
+					Favorites <span className="badge badge-light">{store.favorites.length}</span>
 				</button>
 				<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a className="dropdown-item" href="#">
-						Action
-					</a>
-					<a className="dropdown-item" href="#">
-						Another action
-					</a>
-					<a className="dropdown-item" href="#">
-						Something else here
-					</a>
+					{store.favorites.map((item, index) => {
+						return (
+							<a className="dropdown-item" href="#" key={index}>
+								{item}
+							</a>
+						);
+					})}
 				</div>
 			</div>
 		</nav>
