@@ -7,7 +7,8 @@ export function Cardpeople(props) {
 	console.log(store);
 
 	const handleOnClick = e => {
-		actions.addFavorites();
+		let fav = props.name;
+		actions.addFavorites(fav);
 	};
 
 	return (

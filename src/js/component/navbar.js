@@ -5,7 +5,7 @@ import { Context } from "../store/appContext";
 
 export const Navbar = () => {
 	const { store, actions } = useContext(Context);
-	console.log(store);
+	//console.log(store);
 
 	const handleDelete = index => {
 		console.log("Quiero eliminar el item en el index" + index);
@@ -13,7 +13,8 @@ export const Navbar = () => {
 	};
 
 	const showFavorites = () => {
-		return store.favorites.map((item, index) => {
+		store.favorites.map((item, index) => {
+			console.log("favoritos", store.favorites);
 			return (
 				<a
 					className="dropdown-item"
@@ -55,7 +56,35 @@ export const Navbar = () => {
 						Favorites <span className="badge badge-light">{store.favorites.length}</span>
 					</button>
 					<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						{showFavorites}
+						<ul className="dropdown-item">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false">
+									Dropdown
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">
+										Action
+									</a>
+									<a class="dropdown-item" href="#">
+										Another action
+									</a>
+									<div class="dropdown-divider" />
+									<a class="dropdown-item" href="#">
+										Something else here
+									</a>
+								</div>
+							</li>
+							*/este li era para traer la data de showFavorites. Pero hay que trabajar la data de arriba a
+							ver si sirve/*
+							<li>{showFavorites}</li>
+						</ul>
 					</div>
 				</div>
 			</div>

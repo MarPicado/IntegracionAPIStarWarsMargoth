@@ -6,10 +6,9 @@ export function Cardplanets(props) {
 	const { store, actions } = useContext(Context);
 	console.log(store);
 
-	const [heart, setHeart] = useState([]);
-
 	const handleOnClick = e => {
-		actions.addFavorites();
+		let fav = props.name;
+		actions.addFavorites(fav);
 	};
 
 	return (
