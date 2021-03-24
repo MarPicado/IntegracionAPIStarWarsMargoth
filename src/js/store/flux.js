@@ -13,7 +13,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 					initial: "white"
 				}
 			],
-			heart: 1,
 			favorites: []
 		},
 		actions: {
@@ -52,9 +51,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				//reset the global store
 				setStore({ demo: demo });
-			},
-			setHeart: () => {
-				setStore({ heart: getStore().heart + 1 });
 			},
 			addFavorites: fav => {
 				setStore({ favorites: getStore().favorites.concat(fav) });

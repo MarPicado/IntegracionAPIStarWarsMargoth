@@ -1,6 +1,7 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
 
 export function Cardpeople(props) {
 	const { store, actions } = useContext(Context);
@@ -24,9 +25,7 @@ export function Cardpeople(props) {
 					<p className="card-text text-lg-left">Gender: {props.gender}</p>
 					<p className="card-text text-lg-left">Hair Color: {props.hair_color}</p>
 					<p className="card-text text-lg-left">Eyes Color: {props.eye_color}</p>
-					<a href="#" className="btn btn-primary float-left">
-						Learn More!
-					</a>
+					<button className="btn btn-primary float-left">Learn More!</button>
 					<a
 						href="#"
 						className="btn btn-warning float-right"
