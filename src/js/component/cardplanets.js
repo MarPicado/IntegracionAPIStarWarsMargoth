@@ -23,10 +23,10 @@ export function Cardplanets(props) {
 					<h5 className="card-title text-xl-left">Name: {props.name}</h5>
 					<p className="card-text text-lg-left">Population: {props.population}</p>
 					<p className="card-text text-lg-left">Terrain: {props.terrain}</p>
-					<a href="#" className="btn btn-primary mr-5">
+					<a href="#" className="btn btn-primary float-left">
 						Learn More!
 					</a>
-					<a href="#" className="btn btn-warning ml-3" onClick={e => handleOnClick(e)}>
+					<a href="#" className="btn btn-warning float-right" onClick={e => handleOnClick(e)}>
 						<i className="fas fa-heart" />
 					</a>
 				</div>

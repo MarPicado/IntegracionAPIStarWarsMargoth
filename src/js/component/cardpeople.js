@@ -24,10 +24,13 @@ export function Cardpeople(props) {
 					<p className="card-text text-lg-left">Gender: {props.gender}</p>
 					<p className="card-text text-lg-left">Hair Color: {props.hair_color}</p>
 					<p className="card-text text-lg-left">Eyes Color: {props.eye_color}</p>
-					<a href="#" className="btn btn-primary mr-5">
+					<a href="#" className="btn btn-primary float-left">
 						Learn More!
 					</a>
-					<a href="#" className="btn btn-warning ml-3" onClick={e => handleOnClick(e)}>
+					<a
+						href="#"
+						className="btn btn-warning float-right"
+						onClick={() => actions.addFavorites(props.name)}>
 						<i className="fas fa-heart" />
 					</a>
 				</div>
