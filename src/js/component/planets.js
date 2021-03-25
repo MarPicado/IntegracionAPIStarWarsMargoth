@@ -20,6 +20,7 @@ export const Planets = () => {
 										name={item.name}
 										population={item.population}
 										terrain={item.terrain}
+										id={index}
 									/>
 								</div>
 							);
