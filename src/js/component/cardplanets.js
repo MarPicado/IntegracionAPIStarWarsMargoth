@@ -17,8 +17,8 @@ export function Cardplanets(props) {
 			<div className="card" style={{ width: "18rem" }}>
 				<img
 					className="card-img-top"
-					src="https://www.telokwento.com/wp-content/uploads/2020/04/starwaars.jpg"
-					alt="Star Wars Image"
+					src="https://static2.cbrimages.com/wordpress/wp-content/uploads/2020/07/star-wars-death-star-earth.jpg"
+					alt="Star Wars Planets Image"
 				/>
 				<div className="card-body">
 					<h5 className="card-title text-xl-left">Name: {props.name}</h5>

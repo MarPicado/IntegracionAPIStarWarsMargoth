@@ -13,10 +13,10 @@ export function Cardplanetdetails(props) {
 				<div className="row no-gutters">
 					<div className="col-md-6">
 						<img
-							src="https://assets.tonica.la/__export/1609876034823/sites/debate/img/2021/01/05/star-wars-yoda-r2-d2.jpg_242310155.jpg"
+							src="https://d2cdo4blch85n8.cloudfront.net/wp-content/uploads/2019/08/Planet-with-Three-Suns-Discovered-Featured-image.jpg"
 							width="500"
 							height="300"
-							alt="Yoda and R2-D2"
+							alt="Star Wars Planet Image"
 						/>
 					</div>
 					<div className="col-md-6">
