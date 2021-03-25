@@ -16,7 +16,15 @@ export const Peopledetails = () => {
 						if (id == index) {
 							return (
 								<div key={index}>
-									<Cardpeopledetails image={item.img} name={item.name} />
+									<Cardpeopledetails
+										image={item.img}
+										name={item.name}
+										birth={item.birth_year}
+										gender={item.gender}
+										height={item.height}
+										skin={item.skin_color}
+										eyes={item.eye_color}
+									/>
 								</div>
 							);
 						}
