@@ -19,37 +19,22 @@ export const Peopledetails = () => {
 									<Cardpeopledetails
 										image={item.img}
 										name={item.name}
-										birth={item.birth_year}
+										birth_year={item.birth_year}
 										gender={item.gender}
 										height={item.height}
-										skin={item.skin_color}
-										eyes={item.eye_color}
+										skin_color={item.skin_color}
+										eye_color={item.eye_color}
 									/>
 								</div>
 							);
 						}
 				  })
 				: "loading..."}
-			<Link to="/">Go Back</Link>
+			<Link to="/">
+				<button type="button" className="btn btn-warning">
+					Go Back
+				</button>
+			</Link>
 		</div>
 	);
 };
-
-// {
-// 	store.people !== undefined
-// 		? store.people.map((item, index) => {
-// 				return (
-// 					<div key={index}>
-// 						<Cardpeople
-// 							image={item.img}
-// 							name={item.name}
-// 							gender={item.gender}
-// 							hair_color={item.hair_color}
-// 							eye_color={item.eye_color}
-// 							id={index}
-// 						/>
-// 					</div>
-// 				);
-// 		  })
-// 		: "loading...";
-// }

@@ -30,24 +30,28 @@ export function Cardpeopledetails(props) {
 					</div>
 				</div>
 			</div>
-			<ul className="list-group list-group-horizontal border-top">
-				<li className="list-group-item">
-					Name
-					<br>{props.name}</br>
-				</li>
-				<li className="list-group-item">Birth Year</li>
-				<li className="list-group-item">Gender</li>
-				<li className="list-group-item">Height</li>
-				<li className="list-group-item">Skin Color</li>
-				<li className="list-group-item">Eye Color</li>
-			</ul>
-			{/* <ul className="list-group list-group-horizontal-sm border-0">
-				<li className="list-group-item">{props.name}</li>
-				<li className="list-group-item">{props.gender}</li>
-				<li className="list-group-item">{props.height}</li>
-				<li className="list-group-item">{props.skin_color}</li>
-				<li className="list-group-item">{props.eye_color}</li>
-			</ul> */}
+			<table className="table mt-3">
+				<thead>
+					<tr>
+						<th scope="col">Name</th>
+						<th scope="col">Birth Year</th>
+						<th scope="col">Gender</th>
+						<th scope="col">Height</th>
+						<th scope="col">Skin Color</th>
+						<th scope="col">Eye Color</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{props.name}</td>
+						<td>{props.birth_year}</td>
+						<td>{props.gender}</td>
+						<td>{props.height}</td>
+						<td>{props.skin_color}</td>
+						<td>{props.eye_color}</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	);
 }
@@ -57,7 +61,7 @@ Cardpeopledetails.propTypes = {
 	birth_year: PropTypes.number,
 	gender: PropTypes.string,
 	height: PropTypes.number,
-	skin_color: PropTypes.number,
+	skin_color: PropTypes.string,
 	eye_color: PropTypes.string,
 	img: PropTypes.string,
 	id: PropTypes.number
