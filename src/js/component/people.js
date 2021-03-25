@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import { Cardpeople } from "./cardpeople";
@@ -21,6 +21,7 @@ export const People = () => {
 										gender={item.gender}
 										hair_color={item.hair_color}
 										eye_color={item.eye_color}
+										id={index}
 									/>
 								</div>
 							);

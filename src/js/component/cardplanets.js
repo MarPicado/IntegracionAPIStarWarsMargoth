@@ -24,9 +24,9 @@ export function Cardplanets(props) {
 					<h5 className="card-title text-xl-left">Name: {props.name}</h5>
 					<p className="card-text text-lg-left">Population: {props.population}</p>
 					<p className="card-text text-lg-left">Terrain: {props.terrain}</p>
-					<a href="#" className="btn btn-primary float-left">
+					<button href="#" className="btn btn-primary float-left">
 						Learn More!
-					</a>
+					</button>
 					<a href="#" className="btn btn-warning float-right" onClick={e => handleOnClick(e)}>
 						<i className="fas fa-heart" />
 					</a>
@@ -40,5 +40,6 @@ Cardplanets.propTypes = {
 	name: PropTypes.string,
 	img: PropTypes.string,
 	population: PropTypes.number,
-	terrain: PropTypes.string
+	terrain: PropTypes.string,
+	id: PropTypes.number
 };

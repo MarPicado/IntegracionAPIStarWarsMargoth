@@ -25,7 +25,9 @@ export function Cardpeople(props) {
 					<p className="card-text text-lg-left">Gender: {props.gender}</p>
 					<p className="card-text text-lg-left">Hair Color: {props.hair_color}</p>
 					<p className="card-text text-lg-left">Eyes Color: {props.eye_color}</p>
-					<button className="btn btn-primary float-left">Learn More!</button>
+					<Link to={"/people/" + props.id}>
+						<button className="btn btn-primary float-left">Learn More!</button>
+					</Link>
 					<a
 						href="#"
 						className="btn btn-warning float-right"
@@ -43,5 +45,6 @@ Cardpeople.propTypes = {
 	gender: PropTypes.string,
 	hair_color: PropTypes.string,
 	eye_color: PropTypes.string,
-	img: PropTypes.string
+	img: PropTypes.string,
+	id: PropTypes.number
 };
