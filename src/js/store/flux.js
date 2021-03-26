@@ -38,6 +38,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const data = await response.json();
 				setStore({ planets: data.results });
 			},
+			loadVehicle: async () => {
+				/**
+					fetch().then().then(data => setStore({ "foo": data.bar }))
+                */
+				const url = "https://swapi.dev/api/vehicles/";
+				const response = await fetch(url);
+				const data = await response.json();
+				setStore({ vehicles: data.results });
+			},
 			changeColor: (index, color) => {
 				//get the store
 				const store = getStore();

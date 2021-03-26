@@ -25,7 +25,7 @@ export function Cardplanets(props) {
 					<p className="card-text text-lg-left">Population: {props.population}</p>
 					<p className="card-text text-lg-left">Terrain: {props.terrain}</p>
 					<Link to={"/planets/" + props.id}>
-						<button href="#" className="btn btn-primary float-left">
+						<button href="#" className="btn btn-light float-left">
 							Learn More!
 						</button>
 					</Link>
