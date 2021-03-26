@@ -31,7 +31,7 @@ export const Navbar = () => {
 	});
 
 	return (
-		<nav className="navbar navbar-light bg-light">
+		<nav className="navbar navbarcolor">
 			<a className="navbar-brand" href="#">
 				<Link to="/">
 					<img

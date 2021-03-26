@@ -5,7 +5,7 @@ import { People } from "../component/people";
 import { Planets } from "../component/planets";
 
 export const Home = () => (
-	<div className="text-center">
+	<div className="text-center homebg">
 		<People />
 		<Planets />
 	</div>
