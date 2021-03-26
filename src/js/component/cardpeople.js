@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
+import "../../styles/people.scss";
 
 export function Cardpeople(props) {
 	const { store, actions } = useContext(Context);
@@ -14,7 +15,7 @@ export function Cardpeople(props) {
 
 	return (
 		<div className="col">
-			<div className="card" style={{ width: "18rem" }}>
+			<div className="card d-flex" style={{ width: "18rem" }}>
 				<img
 					className="card-img-top"
 					src="https://www.telokwento.com/wp-content/uploads/2020/04/starwaars.jpg"
@@ -26,7 +27,7 @@ export function Cardpeople(props) {
 					<p className="card-text text-lg-left">Hair Color: {props.hair_color}</p>
 					<p className="card-text text-lg-left">Eyes Color: {props.eye_color}</p>
 					<Link to={"/people/" + props.id}>
-						<button className="btn btn-primary float-left">Learn More!</button>
+						<button className="btn btn-light float-left">Learn More!</button>
 					</Link>
 					<a
 						href="#"

@@ -9,7 +9,7 @@ export const Planets = () => {
 	console.log(store);
 	return (
 		<div className="container-fluid characters mt-5">
-			<h1>Planets</h1>
+			<h1 className="title">Planets</h1>
 			<div className="row">
 				{store.planets !== undefined
 					? store.planets.map((item, index) => {

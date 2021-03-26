@@ -36,8 +36,8 @@ export const Navbar = () => {
 				<Link to="/">
 					<img
 						src="https://www.freepnglogos.com/uploads/star-wars-logo-png-8.png"
-						width="140"
-						height="90"
+						width="130"
+						height="80"
 						alt=""
 					/>
 				</Link>

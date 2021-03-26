@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
+import "../../styles/home.scss";
 
 export function Cardpeopledetails(props) {
 	const { store, actions } = useContext(Context);
