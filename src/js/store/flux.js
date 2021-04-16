@@ -24,7 +24,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
                 */
-				const url = "https://swapi.dev/api/people/";
+				const url = "https://3000-gray-dove-78egdqsw.ws-us03.gitpod.io/people";
 				const response = await fetch(url);
 				const data = await response.json();
 				setStore({ people: data.results });
@@ -33,7 +33,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
                 */
-				const url = "https://swapi.dev/api/planets/";
+				const url = "https://3000-gray-dove-78egdqsw.ws-us03.gitpod.io/planets";
 				const response = await fetch(url);
 				const data = await response.json();
 				setStore({ planets: data.results });
@@ -42,7 +42,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
                 */
-				const url = "https://swapi.dev/api/vehicles/";
+				const url = "https://3000-gray-dove-78egdqsw.ws-us03.gitpod.io/vehicles";
 				const response = await fetch(url);
 				const data = await response.json();
 				setStore({ vehicles: data.results });
