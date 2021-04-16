@@ -9,7 +9,7 @@ export const Vehicles = () => {
 	console.log(store);
 	return (
 		<div className="container-fluid characters mt-5">
-			<h1 className="title">Vehicles</h1>
+			<h1 className="title">Vehicles1</h1>
 			<div className="row">
 				{store.vehicles !== undefined
 					? store.vehicles.map((item, index) => {
