@@ -6,7 +6,6 @@ import "../../styles/people.scss";
 
 export const People = () => {
 	const { store, actions } = useContext(Context);
-	console.log(store);
 	return (
 		<div className="container-fluid characters mt-5">
 			<h1 className="title">Characters</h1>
@@ -17,10 +16,10 @@ export const People = () => {
 								<div key={index}>
 									<Cardpeople
 										image={item.img}
-										name={item.name}
-										gender={item.gender}
-										hair_color={item.hair_color}
-										eye_color={item.eye_color}
+										name={item.Name}
+										gender={item.Gender}
+										hair_color={item.Hair_Color}
+										eye_color={item.Eye_Color}
 										id={index}
 									/>
 								</div>

@@ -14,16 +14,17 @@ export const Peopledetails = () => {
 			{store.people !== undefined
 				? store.people.map((item, index) => {
 						if (id == index) {
+							console.log(store.people);
 							return (
 								<div key={index}>
 									<Cardpeopledetails
 										image={item.img}
-										name={item.name}
-										birth_year={item.birth_year}
-										gender={item.gender}
-										height={item.height}
-										skin_color={item.skin_color}
-										eye_color={item.eye_color}
+										name={item.Name}
+										birth_year={item.Birth_Year}
+										gender={item.Gender}
+										height={item.Height}
+										skin_color={item.Skin_Color}
+										eye_color={item.Eye_Color}
 									/>
 								</div>
 							);

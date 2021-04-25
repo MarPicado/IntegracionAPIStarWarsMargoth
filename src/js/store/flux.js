@@ -13,7 +13,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 					initial: "white"
 				}
 			],
-			favorites: []
+			favorites: [],
+			people: [],
+			planets: []
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -24,19 +26,19 @@ const getState = ({ getStore, getActions, setStore }) => {
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
                 */
-				const url = "https://3000-gray-dove-78egdqsw.ws-us03.gitpod.io/people";
+				const url = "https://3000-chocolate-mink-5qp1uwmg.ws-us03.gitpod.io/people";
 				const response = await fetch(url);
 				const data = await response.json();
-				setStore({ people: data.results });
+				setStore({ people: data });
 			},
 			loadPlanet: async () => {
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
                 */
-				const url = "https://3000-gray-dove-78egdqsw.ws-us03.gitpod.io/planets";
+				const url = "https://3000-chocolate-mink-5qp1uwmg.ws-us03.gitpod.io/planet";
 				const response = await fetch(url);
 				const data = await response.json();
-				setStore({ planets: data.results });
+				setStore({ planets: data });
 			},
 			changeColor: (index, color) => {
 				//get the store

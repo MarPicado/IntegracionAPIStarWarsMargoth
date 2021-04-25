@@ -17,9 +17,9 @@ export const Planets = () => {
 								<div key={index}>
 									<Cardplanets
 										image={item.img}
-										name={item.name}
-										population={item.population}
-										terrain={item.terrain}
+										name={item.Name}
+										population={item.Population}
+										terrain={item.Terrain}
 										id={index}
 									/>
 								</div>
