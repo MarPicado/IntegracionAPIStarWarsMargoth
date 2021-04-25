@@ -7,10 +7,11 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import { Peopledetails } from "./views/peopledetails";
 import { Planetdetails } from "./views/planetdetails";
+import { Login } from "./views/login";
+import { Register } from "./views/register";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
-import { Footer } from "./component/footer";
 
 //create your first component
 const Layout = () => {
@@ -26,6 +27,12 @@ const Layout = () => {
 					<Switch>
 						<Route exact path="/">
 							<Home />
+						</Route>
+						<Route exact path="/register">
+							<Register />
+						</Route>
+						<Route exact path="/login">
+							<Login />
 						</Route>
 						<Route exact path="/people/:id">
 							<Peopledetails />

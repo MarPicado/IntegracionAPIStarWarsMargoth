@@ -7,7 +7,7 @@ import "../../styles/people.scss";
 
 export const Planetdetails = () => {
 	const { id } = useParams();
-	const { store, actions } = useContext(Context);
+	const { store } = useContext(Context);
 
 	return (
 		<div className="container">
