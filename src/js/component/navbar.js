@@ -9,7 +9,8 @@ export const Navbar = () => {
 
 	const handleDelete = index => {
 		console.log("Quiero eliminar el item en el index" + index);
-		actions.deleteFavorites(index);
+		actions.deleteFavPlanet(index);
+		actions.deleteFavPeople(index);
 	};
 
 	const showFavorites = store.favorites.map((item, index) => {

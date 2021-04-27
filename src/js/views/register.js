@@ -14,7 +14,7 @@ export const Register = () => {
 			password: password
 		};
 
-		fetch("https://3000-chocolate-mink-5qp1uwmg.ws-us03.gitpod.io/register", {
+		fetch("https://3000-beige-haddock-sxvbt1tp.ws-us03.gitpod.io/register", {
 			method: "POST",
 			body: JSON.stringify(body),
 			headers: {

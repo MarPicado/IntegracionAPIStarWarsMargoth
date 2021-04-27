@@ -13,7 +13,7 @@ export const Login = () => {
 			password: password
 		};
 
-		fetch("https://3000-chocolate-mink-5qp1uwmg.ws-us03.gitpod.io/login", {
+		fetch("https://3000-beige-haddock-sxvbt1tp.ws-us03.gitpod.io/login", {
 			method: "POST",
 			body: JSON.stringify(body),
 			headers: {
